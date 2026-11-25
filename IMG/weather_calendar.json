@@ -1,0 +1,3652 @@
+{
+ "months": [
+  {
+   "name": "сентябрь",
+   "days": [
+    {
+     "tMin": 6,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 13,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 11,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 13,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 14,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 13,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 2,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 14,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 14,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 15,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 11,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 10,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 11,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 13,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 11,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 13,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 13,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 10,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 12,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 10,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 2,
+     "tMax": 10,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 11,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 2,
+     "tMax": 11,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 8,
+     "w": {
+      "clear": 40,
+      "cloudy": 30,
+      "rain": 30
+     }
+    }
+   ]
+  },
+  {
+   "name": "октябрь",
+   "days": [
+    {
+     "tMin": 0,
+     "tMax": 9,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 2,
+     "tMax": 9,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 12,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 11,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 9,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 2,
+     "tMax": 9,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -1,
+     "tMax": 9,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -1,
+     "tMax": 6,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 9,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 9,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -4,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -1,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 6,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -1,
+     "tMax": 6,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 7,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 4,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -4,
+     "tMax": 4,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -3,
+     "tMax": 4,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 5,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -4,
+     "tMax": 3,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -4,
+     "tMax": 4,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -4,
+     "tMax": 5,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -3,
+     "tMax": 3,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -5,
+     "tMax": 3,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    },
+    {
+     "tMin": -5,
+     "tMax": 5,
+     "w": {
+      "clear": 25,
+      "cloudy": 35,
+      "rain": 32,
+      "snow": 8
+     }
+    }
+   ]
+  },
+  {
+   "name": "ноябрь",
+   "days": [
+    {
+     "tMin": -6,
+     "tMax": 1,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -3,
+     "tMax": 3,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -5,
+     "tMax": 2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": 1,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -5,
+     "tMax": 2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 5,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 1,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": 1,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": 0,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": 2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": 0,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": 0,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": -1,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": 1,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -11,
+     "tMax": -3,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -1,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": -1,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -7,
+     "tMax": 0,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -12,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -3,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -11,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -11,
+     "tMax": -4,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -2,
+     "w": {
+      "clear": 20,
+      "cloudy": 30,
+      "rain": 10,
+      "snow": 28,
+      "frost": 12
+     }
+    }
+   ]
+  },
+  {
+   "name": "декабрь",
+   "days": [
+    {
+     "tMin": -10,
+     "tMax": -4,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -12,
+     "tMax": -4,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -4,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -10,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -9,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -9,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -10,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -9,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -9,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 26,
+      "frost": 24
+     }
+    }
+   ]
+  },
+  {
+   "name": "январь",
+   "days": [
+    {
+     "tMin": -18,
+     "tMax": -11,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -7,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -19,
+     "tMax": -11,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -9,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -10,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -10,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -19,
+     "tMax": -9,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -10,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -9,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -10,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -19,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -10,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -10,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -11,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -11,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -10,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -9,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -19,
+     "tMax": -10,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -9,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -18,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -6,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -7,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -7,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -8,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -7,
+     "w": {
+      "clear": 25,
+      "cloudy": 15,
+      "snow": 25,
+      "frost": 35
+     }
+    }
+   ]
+  },
+  {
+   "name": "февраль",
+   "days": [
+    {
+     "tMin": -15,
+     "tMax": -9,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -17,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -16,
+     "tMax": -9,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -14,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -8,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -15,
+     "tMax": -6,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -4,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -7,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -12,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -12,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -12,
+     "tMax": -5,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    },
+    {
+     "tMin": -12,
+     "tMax": -4,
+     "w": {
+      "clear": 30,
+      "cloudy": 20,
+      "snow": 25,
+      "frost": 25
+     }
+    }
+   ]
+  },
+  {
+   "name": "март",
+   "days": [
+    {
+     "tMin": -12,
+     "tMax": -4,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -4,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -13,
+     "tMax": -3,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": -1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": -2,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -11,
+     "tMax": -3,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": -2,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": 0,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": 0,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -7,
+     "tMax": 1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": -1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": 1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -7,
+     "tMax": 1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": -1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -7,
+     "tMax": 0,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": 0,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -10,
+     "tMax": 0,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -7,
+     "tMax": 1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -9,
+     "tMax": -1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -7,
+     "tMax": 2,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": 0,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -8,
+     "tMax": 0,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 2,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -7,
+     "tMax": 1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -5,
+     "tMax": 2,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 0,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 2,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 3,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -4,
+     "tMax": 4,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    },
+    {
+     "tMin": -5,
+     "tMax": 1,
+     "w": {
+      "clear": 35,
+      "cloudy": 25,
+      "snow": 28,
+      "frost": 12
+     }
+    }
+   ]
+  },
+  {
+   "name": "апрель",
+   "days": [
+    {
+     "tMin": -4,
+     "tMax": 3,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 3,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 6,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -5,
+     "tMax": 5,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -3,
+     "tMax": 4,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -6,
+     "tMax": 4,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 5,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -1,
+     "tMax": 5,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 7,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -4,
+     "tMax": 5,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 7,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 7,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 9,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -1,
+     "tMax": 9,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -1,
+     "tMax": 7,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -1,
+     "tMax": 5,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": -2,
+     "tMax": 7,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 8,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 9,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 10,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 9,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 10,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 9,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 9,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 2,
+     "tMax": 10,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 1,
+     "tMax": 10,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 9,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 9,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 0,
+     "tMax": 10,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 2,
+     "tMax": 12,
+     "w": {
+      "clear": 35,
+      "cloudy": 30,
+      "rain": 20,
+      "snow": 10,
+      "frost": 5
+     }
+    }
+   ]
+  },
+  {
+   "name": "май",
+   "days": [
+    {
+     "tMin": 4,
+     "tMax": 10,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 12,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 13,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 11,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 12,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 14,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 2,
+     "tMax": 13,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 12,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 12,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 14,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 13,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 14,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 15,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 16,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 4,
+     "tMax": 13,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 14,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 16,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 15,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 17,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 16,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 17,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 15,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 16,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 18,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 15,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 17,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 16,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 16,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 16,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 17,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 18,
+     "w": {
+      "clear": 42,
+      "cloudy": 30,
+      "rain": 23,
+      "frost": 5
+     }
+    }
+   ]
+  },
+  {
+   "name": "июнь",
+   "days": [
+    {
+     "tMin": 9,
+     "tMax": 17,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 17,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 17,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 23,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    }
+   ]
+  },
+  {
+   "name": "июль",
+   "days": [
+    {
+     "tMin": 13,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 23,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 23,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 24,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 23,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 16,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 15,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 15,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 14,
+     "tMax": 22,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    }
+   ]
+  },
+  {
+   "name": "август",
+   "days": [
+    {
+     "tMin": 11,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 21,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 12,
+     "tMax": 20,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 17,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 17,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 13,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 11,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 9,
+     "tMax": 17,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 19,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 16,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 10,
+     "tMax": 18,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 8,
+     "tMax": 16,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 14,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 16,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 15,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 14,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 16,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 15,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 14,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 6,
+     "tMax": 13,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 5,
+     "tMax": 13,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 3,
+     "tMax": 11,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    },
+    {
+     "tMin": 7,
+     "tMax": 13,
+     "w": {
+      "clear": 45,
+      "cloudy": 30,
+      "rain": 25
+     }
+    }
+   ]
+  }
+ ]
+}

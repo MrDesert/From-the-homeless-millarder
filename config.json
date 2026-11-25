@@ -1,0 +1,221 @@
+{
+  "hourMs": 2500,
+  "apartmentPrice": 1000000,
+  "startMoney": 200,
+  "startHour": 8,
+  "startStats": { "health": 70, "energy": 70, "satiety": 60, "mood": 55, "clean": 30 },
+
+  "tick": {
+    "satietyPerHour": -0.9,
+    "cleanPerHour": -0.3,
+    "moodPerHour": -0.2,
+    "logMax": 150
+  },
+
+  "barColors": { "badBelow": 25, "midBelow": 60 },
+
+  "illnesses": {
+    "cold":     { "dmgPerDay": 3,  "cure": 500 },
+    "flu":      { "dmgPerDay": 6,  "cure": 1000 },
+    "lice":     { "cleanPerDay": -20, "cure": 400 },
+    "gastrit":  { "dmgPerDay": 4,  "cure": 800 },
+    "insomnia": { "cure": 600, "sleepMul": 0.5 }
+  },
+
+  "midnight": {
+    "starveBelow": 0, "starveHealth": -10, "starveMood": -10,
+    "tiredBelow": 15, "tiredHealth": -5,
+    "sickBase": 0.04,
+    "sickIfCleanBelow": 25, "sickDirtyBonus": 0.10,
+    "sickIfHealthBelow": 40, "sickLowBonus": 0.08,
+    "streetGearSickReduce": 0.02,
+    "eventChoiceChance": 0.3,
+    "eventRandomChance": 0.4,
+    "sickPool": ["cold", "flu", "lice"]
+  },
+
+  "weathers": {
+    "clear": { "tempMin": 14,  "tempMax": 24,  "streetPenalty": 1,    "bottlesMul": 1 },
+    "cloud": { "tempMin": 8,   "tempMax": 16,  "streetPenalty": 1,    "bottlesMul": 1 },
+    "rain":  { "tempMin": 4,   "tempMax": 11,  "streetPenalty": 1.5,  "bottlesMul": 0.7 },
+    "snow":  { "tempMin": -12, "tempMax": 2,   "streetPenalty": 1.5,  "bottlesMul": 0.8 },
+    "frost": { "tempMin": -25, "tempMax": -10, "streetPenalty": 2,    "bottlesMul": 0.6 }
+  },
+
+  "sleep": {
+    "peakHour": 8,
+    "maxHours": 12,
+    "places": {
+      "street":  { "e": 3, "cap": 6, "hp": -1,   "clean": -0.4, "mood": -0.3, "cost": 0 },
+      "shelter": { "e": 6, "cap": 8, "hp": 0,    "clean": 0.2,  "mood": 0.4,  "cost": 300 },
+      "room":    { "e": 7, "cap": 9, "hp": 0.4,  "clean": 0.6,  "mood": 0.6,  "cost": 800 }
+    },
+    "badWeatherEnergyMul": 0.7,
+    "umbrellaRainHpMul": 0.5,
+    "blanketHpMul": 0.6,
+    "bagHpMul": 0.5,
+    "bagEnergy": 1,
+    "bagCapMax": 9,
+    "dogHpMul": 0.7,
+    "dogMood": 0.2,
+    "boxEnergy": 1,
+    "boxHpMul": 0.5,
+    "boxRainDestroyChance": 0.4
+  },
+
+  "jobs": {
+    "yard":     { "rate": 100,  "start": 7,  "end": 15, "days": [1,2,3,4,5,6],  "offerChance": 0.9,  "needClean": 15, "needDoc": false, "needExp": 0,   "needClothes": false, "needRep": 1,  "type": "physical", "perHour": { "energy": 7,  "satiety": -2,   "clean": -2.5, "mood": -0.6 } },
+    "worker":   { "rate": 150,  "start": 8,  "end": 17, "days": [1,2,3,4,5,6],  "offerChance": 0.85, "needClean": 25, "needDoc": false, "needExp": 0,   "needClothes": false, "needRep": 10,  "type": "physical", "perHour": { "energy": 8,  "satiety": -2.5, "clean": -3,   "mood": -0.8 } },
+    "loader":   { "rate": 285,  "start": 8,  "end": 18, "days": [1,2,3,4,5],    "offerChance": 0.8,  "needClean": 35, "needDoc": false, "needExp": 5,   "needClothes": false, "needRep": 15,  "type": "physical", "perHour": { "energy": 10, "satiety": -3,   "clean": -4,   "mood": -1 } },
+    "courier":  { "rate": 320,  "start": 10, "end": 19, "days": [2,3,4,5,6],    "offerChance": 0.8,  "needClean": 35, "needDoc": false, "needExp": 10,  "needClothes": false, "needRep": 25,  "type": "physical", "perHour": { "energy": 8,  "satiety": -2.5, "clean": -3,   "mood": -0.5 } },
+    "nightLoader": { "rate": 400, "start": 22, "end": 6, "days": [2,4,6],       "offerChance": 0.5,  "needClean": 30, "needDoc": false, "needExp": 8,   "needClothes": false, "needRep": 25,  "type": "physical", "perHour": { "energy": 9,  "satiety": -3,   "clean": -3,   "mood": -1.2 } },
+    "store":    { "rate": 360,  "start": 9,  "end": 18, "days": [1,2,3,4,5,6],  "offerChance": 0.7,  "needClean": 45, "needDoc": true,  "needExp": 15,  "needClothes": false, "needRep": 25,  "type": "mixed",    "perHour": { "energy": 6,  "satiety": -2,   "clean": -2,   "mood": -0.5 } },
+    "security": { "rate": 380,  "start": 20, "end": 23, "days": [1,3,5,7],      "offerChance": 0.6,  "needClean": 40, "needDoc": true,  "needExp": 20,  "needClothes": true,  "needRep": 30,  "type": "mixed",    "perHour": { "energy": 4,  "satiety": -1.5, "clean": -1,   "mood": -0.5 } },
+    "waiter":   { "rate": 410,  "start": 12, "end": 22, "days": [3,4,5,6,7],    "offerChance": 0.6,  "needClean": 70, "needDoc": true,  "needExp": 20,  "needClothes": true,  "needRep": 30,  "type": "mixed",    "perHour": { "energy": 7,  "satiety": -2,   "clean": -1,   "mood": 0 } },
+    "cook":     { "rate": 450,  "start": 9,  "end": 21, "days": [2,3,4,5,6,7],  "offerChance": 0.6,  "needClean": 85, "needDoc": true,  "needExp": 30,  "needClothes": false, "needRep": 30,  "type": "physical", "perHour": { "energy": 9,  "satiety": -2,   "clean": -4,   "mood": -0.5 } },
+    "salesman": { "rate": 520,  "start": 10, "end": 20, "days": [1,2,3,4,5,6],  "offerChance": 0.55, "needClean": 60, "needDoc": true,  "needExp": 35,  "needClothes": true,  "needRep": 50,  "type": "mixed",    "perHour": { "energy": 6,  "satiety": -2,   "clean": -1.5, "mood": -0.5 } },
+    "office":   { "rate": 650,  "start": 9,  "end": 18, "days": [1,2,3,4,5],    "offerChance": 0.45, "needClean": 75, "needDoc": true,  "needExp": 75,  "needClothes": true,  "needRep": 50,  "type": "office",   "perHour": { "energy": 4,  "satiety": -1.5, "clean": -0.5, "mood": -0.3 } },
+    "prog":     { "rate": 1000, "start": 10, "end": 19, "days": [1,2,3,4,5],    "offerChance": 0.35, "needClean": 70, "needDoc": true,  "needExp": 100, "needClothes": true,  "needRep": 150, "type": "office",   "perHour": { "energy": 5,  "satiety": -1.5, "clean": -0.5, "mood": -0.2 } }
+  },
+
+  "earn": {
+    "bottles": { "hours": 3, "energy": 30, "min": 120, "max": 270, "clean": -12, "satiety": -9, "mood": -3 },
+    "beg":     { "hours": 4, "energy": 15, "base": 60, "cleanMul": 0.4, "moodMul": 0.6, "randMin": -40, "randMax": 140, "mul": 0.8, "goodPay": 80, "mood": -8 },
+    "dump":    { "hours": 2, "energy": 15, "clean": -22, "foodChance": 0.4, "satiety": 38, "gastritChance": 0.25, "boxChance": 0.25, "bookChance": 0.12, "moneyChance": 0.4, "moneyMin": 40, "moneyMax": 140 },
+    "seek":    { "hours": 3, "energy": 20, "openFrom": 8, "openTo": 20, "baseChance": 0.45, "cleanMul": 0.004, "clothesBonus": 0.15, "phoneBonus": 0.15, "moodOver": 60, "moodBonus": 0.1, "maxChance": 0.9 },
+    "work":    { "energy": 48, "latePenaltyPerHour": 0.12, "lateMinRate": 0.4, "strikeFromHours": 2, "satietyPerHour": -2, "cleanPerHour": -2.2, "moodPerHour": -0.5, "energyPerHour": -6, "lateMoodPerHour": -3, "finalMood": -4 }
+  },
+
+  "reputation": {
+    "bottleGain": 1, "bottleGoodMax": 8, "officeBottlePenalty": 2,
+    "jobRepGain": 1, "firePenalty": 5,
+    "seekRepMul": 0.002, "maxRepBonus": 20, "maxRepPenalty": 10,
+    "knowledgeMul": 0.1, "knowledgeMaxBonus": 15,
+    "phoneReturnRep": 2, "phoneSellRep": -2,
+    "walletReturnRep": 3, "walletTakeRep": -3, "charityRep": 2
+  },
+
+  "food": [
+    { "id": "dump",       "hours": 1, "energy": 5, "cost": 0,    "satiety": 25,  "mood": -4,  "gastritChance": 0.15 },
+    { "id": "bread",      "hours": 1, "energy": 5, "cost": 80,   "satiety": 20,  "health": -1 },
+    { "id": "pie",        "hours": 1, "energy": 5, "cost": 150,  "satiety": 30,  "mood": 2 },
+    { "id": "canteen",    "hours": 1, "energy": 5, "cost": 250,  "satiety": 45,  "health": 3 },
+    { "id": "shawarma",   "hours": 1, "energy": 5, "cost": 400,  "satiety": 60,  "mood": 5 },
+    { "id": "cafe",       "hours": 1, "energy": 5, "cost": 800,  "satiety": 90,  "mood": 10, "health": 5 },
+    { "id": "restaurant", "hours": 2, "energy": 8, "cost": 2000, "satiety": 100, "mood": 20,  "health": 8, "needClothes": true }
+  ],
+
+  "wash": [
+    { "id": "fountain", "hours": 1, "energy": 5, "cost": 0,    "clean": 40,  "health": -2 },
+    { "id": "shower",   "hours": 1, "energy": 5, "cost": 150,  "clean": 65 },
+    { "id": "banya",    "hours": 2, "energy": 8, "cost": 400,  "clean": 100, "health": 6,  "mood": 5 },
+    { "id": "spa",      "hours": 2, "energy": 8, "cost": 1200, "clean": 100, "health": 12, "mood": 15 }
+  ],
+
+  "rest": { "hours": 2, "energy": 15, "mood": 4, "satietyPerHour": -5 },
+
+  "restExtra": {
+    "walk": { "hours": 2, "energy": 8, "fx": { "mood": 8, "health": 3, "satiety": -4 } },
+    "radio": { "hours": 1, "energy": 5,  "fx": { "mood": 6, "energy": 5 } },
+    "think": { "hours": 1, "energy": 3,  "fx": { "mood": 3, "knowledge": 1 } },
+    "watch": { "hours": 1, "energy": 2,  "fx": { "mood": 4, "clean": -2 } }
+  },
+
+  "books": [
+    { "id": "master",  "cat": "fiction", "hours": 2, "energy": 8,  "fx": { "mood": 12, "satiety": -4 }, "findable": true },
+    { "id": "crime",   "cat": "fiction", "hours": 2, "energy": 8,  "fx": { "mood": 10, "satiety": -4 }, "findable": true },
+    { "id": "martin",  "cat": "fiction", "hours": 2, "energy": 8,  "fx": { "mood": 14, "satiety": -4 }, "findable": true },
+    { "id": "pelevin", "cat": "fiction", "hours": 2, "energy": 6,  "fx": { "mood": 8 },               "findable": false },
+    { "id": "eng",     "cat": "study",   "hours": 2, "energy": 12, "knowledge": 5, "fx": { "mood": -2 }, "findable": false },
+    { "id": "coding",  "cat": "study",   "hours": 2, "energy": 12, "knowledge": 8, "fx": { "mood": -3 }, "findable": true },
+    { "id": "history", "cat": "study",   "hours": 2, "energy": 10, "knowledge": 6, "fx": { "mood": 2 },  "findable": true },
+    { "id": "cooking", "cat": "study",   "hours": 2, "energy": 8,  "knowledge": 3, "fx": { "mood": 4, "satiety": 5 }, "findable": false }
+  ],
+
+  "oneTime": {
+    "ttl": 2,
+    "max": 2,
+    "spawnChance": 0.35,
+    "items": [
+      { "id": "unload",     "hours": 3, "energy": 40, "fx": { "money": 550, "satiety": -18, "mood": -4 } },
+      { "id": "leaflets",   "hours": 2, "energy": 15, "fx": { "money": 220, "mood": -3 } },
+      { "id": "neighbor",   "hours": 2, "energy": 25, "fx": { "money": 300, "rep": 2, "mood": 4 } },
+      { "id": "courierGig", "hours": 3, "energy": 30, "fx": { "money": 450, "satiety": -12 }, "needDoc": true },
+      { "id": "officeGig",  "hours": 2, "energy": 10, "fx": { "money": 800, "mood": 2 }, "needDoc": true, "needRep": 3 }
+    ]
+  },
+
+  "hospital": {
+    "hours": 6, "energy": 20,
+    "healthPerHour": 7, "satietyPerHour": -4, "moodPerHour": -0.8,
+    "showBelow": 55, "openFrom": 8, "openTo": 20
+  },
+
+  "passport": { "cost": 3000, "hours": 4, "energy": 10 },
+  "flat":     { "hours": 2, "energy": 10 },
+
+  "shop": {
+    "clothes":  { "price": 4000, "hours": 2, "energy": 10, "mood": 8 },
+    "card":     { "price": 500,  "hours": 2, "energy": 5 },
+    "blanket":  { "price": 600 },
+    "bag":      { "price": 900 },
+    "umbrella": { "price": 700 },
+    "phone":    { "price": 3500 },
+    "medkit":   { "price": 800, "health": 25 },
+    "snack":    { "price": 150, "satiety": 35 },
+    "soap":     { "price": 100, "clean": 15 },
+    "bookFiction": { "price": 400 },
+    "bookStudy":   { "price": 900 }, 
+    "radio": { "price": 1200 }
+  },
+  "shopHours": { "from": 9, "to": 20 },
+
+  "events": {
+    "choiceChance": 0.3,
+    "randomChance": 0.4,
+    "choiceWeights": {
+      "dog": 3, "blanket": 2, "work_offer": 2, "charity_food": 2, "old_friend": 2,
+      "bedbugs": 2, "noisy_room": 2, "umbrella_sale": 2, "chess": 2,
+      "found_phone": 2, "musician": 2, "lost_wallet": 2
+    },
+    "randomWeights": {
+      "police": 2, "walletFind": 2, "thief": 2, "pie": 2, "rainStart": 2, "chat": 2,
+      "jobBonus": 2, "bread": 2, "frost": 2, "snowStart": 2, "coldInRain": 2, "stash": 2,
+      "shelterBed": 2, "roomRest": 1, "coffee": 1, "calm": 3
+    },
+    "choice": {
+      "dogShare":    { "satiety": -20, "mood": 15, "satietyMax": 85 },
+      "dogPet":      { "mood": 8, "clean": -5 },
+      "dogLeave":    { "mood": -5 },
+      "blanketSell": 200,
+      "workOffer":   { "pay": 400, "energy": -30, "satiety": -10, "minEnergy": 30 },
+      "charity":     { "satiety": 35, "mood": 6, "moodSkip": -3 },
+      "friend":      { "amount": 100, "moodGive": 10, "moodRefuse": -5 },
+      "bedbugsChange":  { "clean": -5,  "mood": -2 },
+      "bedbugsEndure":  { "clean": -15, "mood": -6 },
+      "noisyComplain":  { "mood": 3 },
+      "noisyEndure":    { "mood": -8 },
+      "umbrellaPrice": 300,
+      "chess":       { "bet": 200, "win": 500, "winChance": 0.4, "moodWin": 10, "moodLose": -5, "minMoney": 200 },
+      "phone":       { "reward": 300, "sell": 1200, "moodReturn": 12, "moodSell": -10 },
+      "musician":    { "listenMood": 8, "listenSatiety": -5, "tip": 50, "tipMood": 12 },
+      "wallet":      { "returnMin": 200, "returnMax": 600, "takeMin": 300, "takeMax": 900, "moodReturn": 15, "moodTake": -12 }
+    },
+    "random": {
+      "police":    { "fineMin": 300, "fineMax": 800, "health": -4, "mood": -8 },
+      "walletFind":{ "min": 200, "max": 1500 },
+      "thiefShare": 0.3,
+      "pie":       { "satiety": 30, "mood": 5 },
+      "rainStart": { "clean": -15, "mood": -5 },
+      "chat":      { "mood": 10 },
+      "jobBonusMul": 1.5,
+      "bread":     { "satiety": 15 },
+      "coldChanceInRain": 0.3,
+      "energyBoost": 10,
+      "stash":     { "min": 60, "max": 180 },
+      "shelterBed":{ "clean": 10, "mood": 5 },
+      "roomRest":  { "mood": 8, "health": 3 },
+      "coffee":    { "mood": 5 }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "background": {
+    "day": {
+      "images": [
+        "bg_day"
+      ]
+    },
+    "evening": {
+      "images": [
+        "bg_evening"
+      ]
+    },
+    "night": {
+      "images": [
+        "bg_night"
+      ]
+    }
+  },
+  "character": {
+    "male": {
+      "body": {
+        "images": [
+          "body_male"
+        ]
+      },
+      "head_neutral": {
+        "images": [
+          "head_male_neutral"
+        ]
+      },
+      "emotion": {
+        "happy": {
+          "images": [
+            "head_male_happy"
+          ]
+        },
+        "sad": {
+          "images": [
+            "head_male_sad"
+          ]
+        },
+        "tired": {
+          "images": [
+            "head_male_tired"
+          ]
+        }
+      }
+    },
+    "female": {
+      "body": {
+        "images": [
+          "body_female"
+        ]
+      },
+      "head_neutral": {
+        "images": [
+          "head_female_neutral"
+        ]
+      },
+      "emotion": {
+        "happy": {
+          "images": [
+            "head_female_happy"
+          ]
+        },
+        "sad": {
+          "images": [
+            "head_female_sad"
+          ]
+        },
+        "tired": {
+          "images": [
+            "head_female_tired"
+          ]
+        }
+      }
+    },
+    "beard": {
+      "body": {
+        "images": [
+          "body_male"
+        ]
+      },
+      "head_neutral": {
+        "images": [
+          "head_beard_neutral"
+        ]
+      },
+      "emotion": {
+        "happy": {
+          "images": [
+            "head_beard_happy"
+          ]
+        },
+        "sad": {
+          "images": [
+            "head_beard_sad"
+          ]
+        },
+        "tired": {
+          "images": [
+            "head_beard_tired"
+          ]
+        }
+      }
+    }
+  },
+  "job": {
+    "default": {
+      "images": [
+        "overlay_job_default"
+      ]
+    },
+    "loader": {
+      "images": [
+        "overlay_job_loader"
+      ]
+    },
+    "cleaner": {
+      "images": [
+        "overlay_job_cleaner"
+      ]
+    }
+  },
+  "clothes": {
+    "images": [
+      "overlay_clothes"
+    ]
+  },
+  "dirt": {
+    "light": {
+      "images": [
+        "overlay_dirt"
+      ],
+      "opacity": 0.5
+    },
+    "heavy": {
+      "images": [
+        "overlay_dirt"
+      ],
+      "opacity": 0.95
+    }
+  },
+  "illness": {
+    "cold": {
+      "images": [
+        "overlay_sick_cold1",
+        "overlay_sick_cold2"
+      ]
+    },
+    "flu": {
+      "images": [
+        "overlay_sick_cold1",
+        "overlay_sick_cold2"
+      ]
+    },
+    "lice": {
+      "images": [
+        "overlay_lice1",
+        "overlay_lice2",
+        "overlay_lice3"
+      ]
+    },
+    "gastrit": {
+      "images": [
+        "overlay_gastrit"
+      ]
+    },
+    "insomnia": {
+      "images": [
+        "overlay_insomnia"
+      ]
+    }
+  }
+}

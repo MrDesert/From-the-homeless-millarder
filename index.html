@@ -4,650 +4,77 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Бомж-симулятор: Путь наверх</title>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Segoe UI',Arial,sans-serif;background:#14171c;color:#e8e6e1;min-height:100vh}
-button{font-family:inherit;cursor:pointer;border:none;border-radius:8px}
-.screen{min-height:100vh}
-.hidden{display:none!important}
-
-/* ---------- стартовый экран ---------- */
-#start{display:flex;align-items:center;justify-content:center;padding:20px}
-.start-card{max-width:560px;background:#1e232b;border:1px solid #2f3742;border-radius:16px;padding:32px}
-.start-card h1{font-size:30px;margin-bottom:4px}
-.subtitle{color:#f0a24b;font-weight:600;margin-bottom:16px}
-.start-card p{margin-bottom:12px;line-height:1.5;color:#c9cdd4}
-.start-card ul{margin:0 0 18px 18px;line-height:1.7;color:#c9cdd4}
-#startBtn,#loadBtn{display:block;width:100%;padding:13px;font-size:17px;font-weight:700;background:#f0a24b;color:#1b1b1b;margin-top:10px}
-#loadBtn{background:#3a4450;color:#e8e6e1}
-
-/* ---------- игровой экран ---------- */
-#game{display:flex;flex-direction:column}
-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 16px;background:#1b2027;border-bottom:2px solid #2f3742;flex-wrap:wrap}
-.hleft{color:#9aa3ad}
-.hmid{font-size:20px;font-weight:700;color:#8fd48f}
-header button{background:#2a323c;color:#c9cdd4;padding:8px 12px;border-radius:8px}
-main{display:grid;grid-template-columns:280px 1fr 300px;gap:14px;padding:14px;flex:1}
-@media(max-width:980px){main{grid-template-columns:1fr}}
-.panel{background:#1e232b;border:1px solid #2f3742;border-radius:12px;padding:14px}
-.panel h3{font-size:14px;text-transform:uppercase;letter-spacing:.06em;color:#8b95a1;margin-bottom:10px}
-
-/* статы */
-.stat{margin-bottom:10px}
-.stat .lbl{display:flex;justify-content:space-between;font-size:13px;color:#c9cdd4;margin-bottom:3px}
-.bar{height:12px;background:#2a323c;border-radius:6px;overflow:hidden}
-.bar > div{height:100%;border-radius:6px;transition:width .3s}
-.good{background:#69b46b}.mid{background:#e0b64a}.bad{background:#d05d5d}
-.moneyBar{background:#8fd48f}
-
-/* цели */
-.goal{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:14px;color:#c9cdd4}
-.goal.done{color:#69b46b;text-decoration:line-through}
-.apartProg{margin-top:6px}
-.apartProg .bar{margin-top:4px}
-
-/* действия */
-#slotsInfo{font-size:14px;color:#9aa3ad;margin-bottom:10px}
-#actions{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
-.action{background:#262d37;border:1px solid #35404d;border-radius:10px;padding:12px;text-align:left;color:#e8e6e1}
-.action .an{font-weight:700;font-size:15px;margin-bottom:4px}
-.action .ah{font-size:12.5px;color:#9aa3ad;line-height:1.4}
-.action:hover{background:#2d3641;border-color:#f0a24b}
-.action:disabled{opacity:.4;cursor:not-allowed}
-.action:disabled:hover{background:#262d37;border-color:#35404d}
-
-/* лечение */
-.ill{background:#2a2126;border:1px solid #5d3540;border-radius:8px;padding:8px 10px;margin-bottom:8px;font-size:13.5px}
-.ill b{color:#e08a8a}
-.ill button{margin-top:6px;padding:5px 10px;background:#5d3540;color:#f0d8d8;font-size:12px;border-radius:6px}
-
-/* дневник */
-#log{font-size:13px;line-height:1.55;max-height:60vh;overflow-y:auto}
-.logEntry{padding:6px 0;border-bottom:1px dashed #2f3742;color:#c9cdd4}
-.logEntry .d{color:#6d7681;font-size:11px}
-.logEvent{color:#e0b64a}.logBad{color:#d97a7a}.logGood{color:#8fd48f}.logBig{color:#f0a24b;font-weight:700}
-
-/* модалка */
-#modalWrap{position:fixed;inset:0;background:rgba(0,0,0,.65);display:flex;align-items:center;justify-content:center;padding:16px;z-index:50}
-#modal{background:#1e232b;border:1px solid #3a4450;border-radius:14px;max-width:520px;width:100%;padding:24px;max-height:90vh;overflow-y:auto}
-#modal h2{font-size:20px;margin-bottom:12px}
-#mBody{font-size:14.5px;line-height:1.55;color:#c9cdd4;margin-bottom:16px}
-#mBtns{display:flex;flex-direction:column;gap:8px}
-#mBtns button{padding:11px;background:#2a323c;color:#e8e6e1;border:1px solid #3a4450;text-align:left;font-size:14.5px}
-#mBtns button:hover{border-color:#f0a24b}
-#mBtns button.primary{background:#f0a24b;color:#1b1b1b;font-weight:700;border-color:#f0a24b}
-#mBtns button:disabled{opacity:.4;cursor:not-allowed}
-.choice{border-left:3px solid #f0a24b;padding-left:10px;margin-bottom:2px}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="start" class="screen">
   <div class="start-card">
-    <h1>🏙️ Бомж-симулятор</h1>
-    <div class="subtitle">Путь наверх</div>
-    <p>Вы проснулись на вокзале без паспорта, с горстью мелочи в кармане и лёгким насморком. Впереди — грязные баки, придирчивые работодатели и одна-единственная мечта: <b>собрать 300 000 ₽ и купить себе квартиру</b>.</p>
-    <ul>
-      <li>В день есть <b>3 действия</b> — тратьте их с умом.</li>
-      <li>Ночью нужно где-то спать: улица бесплатна, но бьёт по здоровью.</li>
-      <li>Без паспорта берут только на самую грязную работу.</li>
-      <li>Болезни, дождь, воры и полиция не дремлют.</li>
-      <li>Следите за голодом, чистотой и настроением — от них зависит всё.</li>
-    </ul>
-    <button id="startBtn">Начать выживание</button>
-    <button id="loadBtn" class="hidden">Продолжить игру</button>
+    <h1 id="startTitle"></h1>
+    <div class="subtitle" id="startSubtitle"></div>
+    <p id="startIntro"></p>
+    <ul id="startRules"></ul>
+    <button id="startBtn"></button>
+    <button id="loadBtn" class="hidden"></button>
+  </div>
+</div>
+
+<div id="charSelect" class="screen hidden">
+  <div class="start-card">
+    <h1 id="charTitle"></h1>
+    <p id="charNote"></p>
+    <div id="charList"></div>
+    <button id="charBack"></button>
   </div>
 </div>
 
 <div id="game" class="screen hidden">
   <header>
-    <div class="hleft">📅 День <span id="dayNum">1</span> · <span id="weather"></span></div>
-    <div class="hmid">💸 <span id="money"></span> ₽</div>
+    <div class="hleft">📅 <span id="dayLabel"></span> <span id="dayNum">1</span> · <span id="clock">08:00</span> · <span id="weather"></span></div>
+    <div class="hmid"><span id="money"></span> ₽</div>
     <div class="hright">
-      <button id="saveBtn" title="Сохранить">💾 Сохранить</button>
-      <button id="resetBtn" title="Начать заново">↺</button>
+      <button id="saveBtn"></button>
+      <button id="resetBtn"></button>
     </div>
   </header>
   <main>
     <aside class="panel" id="statsPanel"></aside>
     <section>
+      <!-- шкала занятости: только над портретом -->
+      <div id="busyWrap" class="hidden">
+        <div class="bwMain">
+          <div id="busyLabel"></div>
+          <div class="busybar"><div id="busyBar"></div></div>
+          <div id="busyClock"></div>
+        </div>
+        <button id="busyStop"></button>
+      </div>
+      <div id="portraitWrap">
+        <div id="portrait"></div>
+        <div id="pCaption"></div>
+        <div id="pMissing"></div>
+      </div>
       <div class="panel">
-        <div id="slotsInfo"></div>
+        <div id="timeInfo"></div>
         <div id="actions"></div>
       </div>
     </section>
     <aside class="panel">
-      <h3>Дневник выживания</h3>
+      <h3 id="logTitle"></h3>
       <div id="log"></div>
     </aside>
   </main>
 </div>
 
-<div id="modalWrap" class="hidden"><div id="modal"><h2 id="mTitle"></h2><div id="mBody"></div><div id="mBtns"></div></div></div>
+<div id="modalWrap" class="hidden">
+  <div id="modal">
+    <button id="mClose" title="Закрыть">X</button>
+    <h2 id="mTitle"></h2>
+    <div id="mBody"></div>
+    <div id="mBtns"></div>
+  </div>
+</div>
 
-<script>
-'use strict';
-
-const APARTMENT_PRICE = 300000;
-
-const JOBS = [
-  {id:'yard',   name:'Дворник',        pay:1300, clean:15, doc:false, exp:0,  clothes:false},
-  {id:'worker', name:'Разнорабочий',   pay:1800, clean:25, doc:false, exp:0,  clothes:false},
-  {id:'loader', name:'Грузчик',        pay:2300, clean:35, doc:false, exp:5,  clothes:false},
-  {id:'store',  name:'Кладовщик',      pay:2900, clean:45, doc:true,  exp:15, clothes:false},
-  {id:'waiter', name:'Официант',       pay:3300, clean:70, doc:true,  exp:20, clothes:true},
-  {id:'cook',   name:'Повар в кафе',   pay:3600, clean:60, doc:true,  exp:30, clothes:false},
-  {id:'office', name:'Офис-менеджер',  pay:5200, clean:75, doc:true,  exp:50, clothes:true},
-  {id:'prog',   name:'Программист',    pay:9000, clean:70, doc:true,  exp:90, clothes:true},
-];
-
-const ILLNESSES = {
-  cold:    {name:'Простуда',      dmg:3,  cure:500,  desc:'Кашель и насморк. −3 здоровья в день.'},
-  flu:     {name:'Грипп',         dmg:6,  cure:1000, desc:'Жар и слабость. −6 здоровья в день.'},
-  lice:    {name:'Педикулёз',     clean:20, cure:400, desc:'Зуд не даёт жить. −20 чистоты в день.'},
-  gastrit: {name:'Гастрит',       dmg:4,  cure:800,  desc:'От сомнительной еды. −4 здоровья в день.'},
-  insomnia:{name:'Бессонница',    sleepHalve:true, cure:600, desc:'Ночью толком не спится. Сон восстанавливает вдвое меньше энергии.'},
-};
-
-const HOUSING = [
-  {id:'street',  name:'🌙 Спать на улице',             cost:0,   energy:25, health:-8, clean:-10, mood:-8},
-  {id:'shelter', name:'🏠 Ночлежка (300 ₽)',            cost:300, energy:50, health:-2, clean:0,   mood:3},
-  {id:'room',    name:'🛏️ Комната посуточно (800 ₽)',  cost:800, energy:65, health:3,  clean:5,   mood:5},
-];
-
-const WEATHERS = [
-  {id:'clear', name:'☀️ Ясно',     streetPenalty:1},
-  {id:'cloud', name:'☁️ Пасмурно', streetPenalty:1},
-  {id:'rain',  name:'🌧️ Дождь',   streetPenalty:1.5, bottlesMul:0.7},
-  {id:'frost', name:'❄️ Мороз',    streetPenalty:2,   bottlesMul:0.6},
-];
-
-let S = null;
-
-/* ---------- утилиты ---------- */
-const rnd = (a,b)=>Math.floor(Math.random()*(b-a+1))+a;
-const chance = p=>Math.random()<p;
-const clamp = (v,a=0,b=100)=>Math.max(a,Math.min(b,v));
-const fmt = n=>n.toLocaleString('ru-RU');
-
-/* стартовое состояние (раньше этой функции не было — из-за этого была ошибка) */
-function newState(){
-  return {
-    day:1,
-    slots:3,
-    money:200,
-    health:70,
-    energy:70,
-    hunger:40,
-    mood:55,
-    clean:30,
-    doc:false,
-    clothes:false,
-    card:false,
-    job:null,
-    workDays:0,
-    illnesses:[],
-    log:[],
-    weather:WEATHERS[0],
-    over:false,
-    win:false,
-  };
-}
-
-function clampState(){
-  S.money=Math.max(0,Math.round(S.money));
-  S.health=clamp(S.health); S.energy=clamp(S.energy); S.hunger=clamp(S.hunger);
-  S.mood=clamp(S.mood); S.clean=clamp(S.clean);
-}
-
-function addLog(text, cls){
-  S.log.unshift({d:S.day, text, cls:cls||''});
-  if(S.log.length>120) S.log.pop();
-}
-
-/* ---------- модалки ---------- */
-function showModal(title, bodyHTML, buttons){
-  document.getElementById('mTitle').textContent = title;
-  document.getElementById('mBody').innerHTML = bodyHTML;
-  const box = document.getElementById('mBtns');
-  box.innerHTML='';
-  buttons.forEach(b=>{
-    const btn=document.createElement('button');
-    if(b.primary) btn.classList.add('primary');
-    btn.innerHTML=b.text;
-    if(b.disabled) btn.disabled=true;
-    btn.onclick=()=>{ closeModal(); b.fn && b.fn(); };
-    box.appendChild(btn);
-  });
-  document.getElementById('modalWrap').classList.remove('hidden');
-}
-function closeModal(){ document.getElementById('modalWrap').classList.add('hidden'); }
-
-function msg(title, text, cls){
-  addLog(text, cls);
-  showModal(title, '<p>'+text+'</p>', [{text:'Ок', primary:true, fn:render}]);
-}
-
-/* ---------- отрисовка ---------- */
-function barHTML(label, val, invert){
-  let cls;
-  if(invert) cls = val<25?'good':(val<60?'mid':'bad');
-  else cls = val<25?'bad':(val<60?'mid':'good');
-  return '<div class="stat"><div class="lbl"><span>'+label+'</span><span>'+Math.round(val)+'</span></div>'+
-    '<div class="bar"><div class="'+cls+'" style="width:'+val+'%"></div></div></div>';
-}
-
-function render(){
-  if(!S) return;
-  document.getElementById('dayNum').textContent=S.day;
-  document.getElementById('weather').textContent=S.weather.name;
-  document.getElementById('money').textContent=fmt(S.money);
-
-  // статы
-  let h = barHTML('❤️ Здоровье', S.health) + barHTML('⚡ Энергия', S.energy) +
-          barHTML('🍖 Сытость', 100-S.hunger) + barHTML('😊 Настроение', S.mood) +
-          barHTML('🧼 Чистота', S.clean);
-  if(S.job) h += '<div class="stat"><div class="lbl"><span>💼 Работа</span></div><div style="font-size:13.5px;color:#c9cdd4">'+S.job.name+' — '+fmt(S.job.pay)+' ₽/день · опыт: '+S.workDays+' дн.</div></div>';
-  document.getElementById('statsPanel').innerHTML = '<h3>Состояние</h3>'+h +
-    '<h3 style="margin-top:14px">Цель</h3>'+
-    goalHTML('Восстановить паспорт', S.doc)+
-    goalHTML('Найти стабильную работу', !!S.job)+
-    goalHTML('Приличная одежда', S.clothes)+
-    goalHTML('Накопить на квартиру', S.money>=APARTMENT_PRICE)+
-    '<div class="apartProg"><div class="lbl" style="display:flex;justify-content:space-between;font-size:12.5px;color:#9aa3ad"><span>Квартира — '+fmt(APARTMENT_PRICE)+' ₽</span><span>'+Math.min(100,Math.round(S.money/APARTMENT_PRICE*100))+'%</span></div><div class="bar"><div class="moneyBar" style="width:'+Math.min(100,S.money/APARTMENT_PRICE*100)+'%"></div></div></div>';
-
-  // слоты
-  document.getElementById('slotsInfo').innerHTML = 'Осталось действий: <b>'+'🕐'.repeat(S.slots)+'</b> ('+S.slots+' из 3)';
-
-  // кнопки
-  const ac=document.getElementById('actions');
-  ac.innerHTML='';
-  ACTIONS.forEach(a=>{
-    if(a.show && !a.show()) return;
-    const btn=document.createElement('button');
-    btn.className='action';
-    btn.innerHTML='<div class="an">'+a.name+'</div><div class="ah">'+a.hint+'</div>';
-    const ok=(!a.slot || S.slots>0) && (!a.can || a.can());
-    btn.disabled=!ok || S.over || S.win;
-    btn.onclick=a.run;
-    ac.appendChild(btn);
-  });
-
-  // болячки
-  const illBox=document.createElement('div');
-  illBox.style.marginTop='14px';
-  if(S.illnesses.length){
-    illBox.innerHTML='<h3>Болячки</h3>'+S.illnesses.map((il,i)=>{
-      const d=ILLNESSES[il.id];
-      return '<div class="ill"><b>'+d.name+'</b> — '+d.desc+'<br><button '+(S.money<d.cure?'disabled':'')+' onclick="treat('+i+')">Лечиться — '+fmt(d.cure)+' ₽</button></div>';
-    }).join('');
-  }
-  ac.appendChild(illBox);
-
-  // дневник
-  document.getElementById('log').innerHTML = S.log.map(e=>
-    '<div class="logEntry"><span class="d">День '+e.d+'</span><br><span class="'+e.cls+'">'+e.text+'</span></div>'
-  ).join('');
-}
-
-function goalHTML(text, done){
-  return '<div class="goal'+(done?' done':'')+'">'+(done?'✔':'☐')+' '+text+'</div>';
-}
-
-/* ---------- действия ---------- */
-const ACTIONS = [
-  {id:'bottles', slot:true, name:'♻️ Собирать бутылки', hint:'Мелкий, но честный заработок: 120–270 ₽.',
-   run:()=>{
-     let pay=rnd(120,270);
-     if(S.weather.bottlesMul) pay=Math.round(pay*S.weather.bottlesMul);
-     S.money+=pay; S.energy=clamp(S.energy-25); S.clean=clamp(S.clean-12);
-     S.hunger=clamp(S.hunger+10); S.mood=clamp(S.mood-3);
-     useSlot('Собрал бутылки: +'+pay+' ₽','logGood');
-   }},
-  {id:'beg', slot:true, name:'🪙 Просить милостыню', hint:'Может повезти, а может и нет. Полиция близко.',
-   run:()=>{
-     let base=60+S.clean*0.4+S.mood*0.6;
-     let pay=Math.max(0,Math.round(rnd(-40,140)+base*0.8));
-     S.money+=pay; S.energy=clamp(S.energy-10); S.mood=clamp(S.mood-6);
-     useSlot(pay>80?'Люди отозвались: +'+pay+' ₽':'Просидел весь день с табличкой: +'+pay+' ₽', pay>80?'logGood':'');
-   }},
-  {id:'dump', slot:true, name:'🗑️ Копаться в баках', hint:'Может, найдёте еду, мелочь или блох.',
-   run:()=>{
-     const roll=Math.random();
-     S.energy=clamp(S.energy-15); S.clean=clamp(S.clean-22); S.hunger=clamp(S.hunger-8);
-     if(roll<0.4){
-       S.hunger=clamp(S.hunger-30);
-       if(chance(0.25) && !S.illnesses.some(i=>i.id==='gastrit')) addIllness('gastrit');
-       useSlot('Нашёл что-то съедобное. Живот вроде доволен… но язык не уверен.','');
-     } else if(roll<0.8){
-       const m=rnd(40,140); S.money+=m;
-       useSlot('Из баков выудил тару и мелочь: +'+m+' ₽','logGood');
-     } else {
-       if(!S.illnesses.some(i=>i.id==='lice')) addIllness('lice');
-       useSlot('Влез не туда: теперь вы носите целую колонию блох.','logBad');
-     }
-   }},
-  {id:'work', slot:true, name:'💼 Работать', hint:'Отработать смену и получить зарплату.',
-   show:()=>!!S.job,
-   run:()=>{
-     S.money+=S.job.pay; S.energy=clamp(S.energy-40); S.hunger=clamp(S.hunger+18);
-     S.clean=clamp(S.clean-18); S.mood=clamp(S.mood-4); S.workDays++;
-     useSlot('Отработал смену («'+S.job.name+'»): +'+fmt(S.job.pay)+' ₽','logGood');
-   }},
-  {id:'seek', slot:true, name:'📄 Искать работу', hint:'Ходить по объявлениям. Шанс зависит от чистоты, документов и одежды.',
-   run:()=>{
-     S.energy=clamp(S.energy-15); S.hunger=clamp(S.hunger+8);
-     const eligible=JOBS.filter(j=>j.clean<=S.clean && (!j.doc||S.doc) && (!j.clothes||S.clothes) && S.workDays>=j.exp && (!S.job||j.pay>S.job.pay));
-     if(!eligible.length){
-       useSlot('Обошёл кучу мест — никуда не берут. Нужно быть чище, приличнее или опытнее.','');
-       return;
-     }
-     let p=0.45+S.clean*0.004+(S.clothes?0.15:0)+(S.mood>60?0.1:0);
-     if(chance(Math.min(0.9,p))){
-       const job=eligible[eligible.length-1];
-       showModal('Вакансия!', '<p>Позвонили со склада: «'+job.name+'», '+fmt(job.pay)+' ₽/день. Требования выполнены!</p>',
-         [{text:'✅ Согласиться ('+job.name+')', primary:true, fn:()=>{
-            S.job=job; addLog('Устроился на работу: «'+job.name+'», '+fmt(job.pay)+' ₽/день','logBig'); render();
-          }},
-          {text:'Отказаться', fn:render}]);
-       S.slots--; checkSlots();
-     } else {
-       useSlot('Отправил резюме, подождал у телефона — тишина. Попробуете завтра.','');
-     }
-   }},
-  {id:'eat', slot:true, name:'🍲 Поесть', hint:'От утоления голода зависит здоровье.',
-   run:()=>{
-     showModal('Где поесть?','Голод: '+Math.round(S.hunger),
-      [{text:'🥫 Поесть из баков — бесплатно. Риск гастрита.', fn:()=>{
-         S.hunger=clamp(S.hunger-25); S.mood=clamp(S.mood-4);
-         if(chance(0.15)&&!S.illnesses.some(i=>i.id==='gastrit')) addIllness('gastrit');
-         useSlot('Поел из баков. Вкус — сомнительный, сытость — есть.','');
-       }},
-       {text:'🥣 Столовая — 250 ₽ (−45 голода)', disabled:S.money<250, fn:()=>{
-         S.money-=250; S.hunger=clamp(S.hunger-45); S.health=clamp(S.health+3);
-         useSlot('Поел в столовой: −45 голода, +3 здоровья.','logGood');
-       }},
-       {text:'🌯 Шаурма — 400 ₽ (−60 голода, +настроение)', disabled:S.money<400, fn:()=>{
-         S.money-=400; S.hunger=clamp(S.hunger-60); S.mood=clamp(S.mood+5);
-         useSlot('Шаурма после долгого дня — почти праздник.','logGood');
-       }},
-       {text:'☕ Кафе — 800 ₽ (−90 голода, +настроение, +здоровье)', disabled:S.money<800, fn:()=>{
-         S.money-=800; S.hunger=clamp(S.hunger-90); S.mood=clamp(S.mood+10); S.health=clamp(S.health+5);
-         useSlot('Поел в кафе. Впервые за долгое время — по-человечески.','logGood');
-       }}]);
-   }},
-  {id:'wash', slot:true, name:'🚿 Помыться', hint:'Чистота открывает двери работодателей.',
-   run:()=>{
-     showModal('Где помыться?','Чистота: '+Math.round(S.clean),
-      [{text:'⛲ Умыться у фонтана — бесплатно (+40 чистоты)', fn:()=>{
-         S.clean=clamp(S.clean+40); S.health=clamp(S.health-2); S.mood=clamp(S.mood-2); S.energy=clamp(S.energy-5);
-         useSlot('Помылся у фонтана, насколько это возможно.','');
-       }},
-       {text:'🧖 Баня — 400 ₽ (+чистота, +здоровье, +настроение)', disabled:S.money<400, fn:()=>{
-         S.money-=400; S.clean=100; S.health=clamp(S.health+6); S.mood=clamp(S.mood+5);
-         useSlot('Сходил в баню: чист, свеж и почти доволен жизнью.','logGood');
-       }}]);
-   }},
-  {id:'rest', slot:true, name:'🌳 Отдохнуть в парке', hint:'Немного энергии и покоя.',
-   run:()=>{
-     S.energy=clamp(S.energy+30); S.mood=clamp(S.mood+8); S.hunger=clamp(S.hunger+10);
-     useSlot('Поспал часок на лавке в парке.','');
-   }},
-  {id:'sleepNow', slot:false, name:'🌙 Идти спать', hint:'Закончить день и выбрать, где ночевать.',
-   run:()=>openNight()},
-
-  {id:'treatAll', slot:false, name:'🏥 Бесплатная больница', hint:'Потерять день, но подлечиться.',
-   show:()=>S.health<55,
-   run:()=>{
-     S.health=clamp(S.health+45); S.hunger=clamp(S.hunger+25); S.energy=clamp(S.energy-20);
-     S.mood=clamp(S.mood-5); S.slots=0;
-     addLog('Лёг в больницу. Капельница, мыло и очередь — зато живой.','logGood');
-     openNight();
-   }},
-
-  {id:'doc', slot:false, name:'🪪 Восстановить паспорт (МФЦ) — 3 000 ₽', hint:'Без паспорта не берут на нормальную работу.',
-   show:()=>!S.doc,
-   can:()=>S.money>=3000,
-   run:()=>{
-     S.money-=3000; S.doc=true;
-     addLog('Получил новый паспорт. Теперь вы — гражданин с документами!','logBig'); render();
-   }},
-
-  {id:'clothes', slot:false, name:'👔 Приличная одежда — 4 000 ₽', hint:'Нужна для официанта, офиса и программиста.',
-   show:()=>!S.clothes,
-   can:()=>S.money>=4000,
-   run:()=>{
-     S.money-=4000; S.clothes=true; S.mood=clamp(S.mood+8);
-     addLog('Купил приличную одежду. Люди перестали коситься.','logGood'); render();
-   }},
-
-  {id:'card', slot:false, name:'💳 Открыть банковскую карту — 500 ₽', hint:'Защищает деньги от воров.',
-   show:()=>!S.card,
-   can:()=>S.money>=500,
-   run:()=>{
-     S.money-=500; S.card=true;
-     addLog('Открыл карту. Теперь деньги не так просто украсть.','logGood'); render();
-   }},
-
-  {id:'buyFlat', slot:false, name:'🔑 КУПИТЬ КВАРТИРУ — 300 000 ₽', hint:'Финальная цель игры!',
-   show:()=>S.money>=APARTMENT_PRICE && !S.win,
-   run:()=>{
-     S.money-=APARTMENT_PRICE; S.win=true;
-     addLog('КОНТРАКТ ПОДПИСАН. КВАРТИРА ВАША! 🎉','logBig');
-     showModal('🏆 ПОБЕДА!',
-       '<p>Вы держите ключи от собственной однушки. Ничего роскошного, но своя: можно спать на нормальной кровати, а не на картонке у вокзала.</p>'+
-       '<p><b>Путь занял '+S.day+' дней.</b> Бутылок собрано — не счесть, зато гордость — бесценна.</p>',
-       [{text:'Начать заново', fn:()=>{localStorage.removeItem('bomzh_save'); location.reload();}},
-        {text:'Продолжить жить (если вдруг заскучали)', fn:render}]);
-     render();
-   }},
-];
-
-function useSlot(text, cls){
-  S.slots--; addLog(text, cls);
-  checkSlots();
-}
-function checkSlots(){
-  if(S.slots<=0) openNight(); else render();
-}
-
-/* ---------- болячки ---------- */
-function addIllness(id){
-  if(S.illnesses.some(i=>i.id===id)) return;
-  S.illnesses.push({id});
-  addLog('⚠️ Подхватил: '+ILLNESSES[id].name,'logBad');
-}
-function treat(i){
-  const il=S.illnesses[i]; const d=ILLNESSES[il.id];
-  if(S.money<d.cure) return;
-  S.money-=d.cure;
-  S.illnesses.splice(i,1);
-  addLog('Вылечился от «'+d.name+'» за '+fmt(d.cure)+' ₽.','logGood');
-  render();
-}
-
-/* ---------- ночь ---------- */
-function openNight(){
-  if(S.over||S.win) return;
-  const opts=HOUSING.map(h=>{
-    let e=h.energy, hp=h.health, cl=h.clean, mo=h.mood;
-    if(S.weather.id==='rain'||S.weather.id==='frost'){
-      if(h.id==='street'){ hp=Math.round(hp*S.weather.streetPenalty); }
-    }
-    if(S.illnesses.some(i=>i.id==='insomnia')) e=Math.round(e/2);
-    return {h,e,hp,cl,mo};
-  });
-  showModal('Ночь, день '+S.day,'Куда пойдёте ночевать? Погода: '+S.weather.name,
-    opts.map(o=>({
-      text:o.h.name+(o.h.cost?' — '+fmt(o.h.cost)+' ₽':' — бесплатно'),
-      disabled:S.money<o.h.cost,
-      fn:()=>sleepIn(o)
-    }))
-  );
-}
-
-function sleepIn(o){
-  if(S.money<o.h.cost){ render(); return; }
-  S.money-=o.h.cost;
-  S.energy=clamp(S.energy+o.e);
-  S.health=clamp(S.health+o.hp);
-  S.clean=clamp(S.clean+o.cl);
-  S.mood=clamp(S.mood+o.mo);
-  addLog('Ночь: '+o.h.name.replace(/^\S+\s/,'')+(o.h.cost?' ('+fmt(o.h.cost)+' ₽)':'')+'.','');
-  newDay();
-}
-
-/* ---------- новый день ---------- */
-function newDay(){
-  S.day++; S.slots=3;
-
-  // погода
-  S.weather=WEATHERS[rnd(0,WEATHERS.length-1)];
-
-  // естественные изменения
-  S.hunger=clamp(S.hunger+22);
-  S.clean=clamp(S.clean-7);
-  S.mood=clamp(S.mood-(S.mood<50?6:2));
-
-  // голод бьёт по здоровью
-  if(S.hunger>=100){ S.health=clamp(S.health-10); S.mood=clamp(S.mood-10); addLog('Сильный голод подтачивает здоровье.','logBad'); }
-  if(S.energy<15){ S.health=clamp(S.health-5); addLog('Хроническое переутомление: −5 здоровья.','logBad'); }
-  if(S.mood<=0){ S.mood=0; addLog('Настроение на нуле — всё валится из рук.','logBad'); }
-
-  // болячки
-  S.illnesses.forEach(il=>{
-    const d=ILLNESSES[il.id];
-    if(d.dmg) S.health=clamp(S.health-d.dmg);
-    if(d.clean) S.clean=clamp(S.clean-d.clean);
-  });
-
-  // шанс заболеть
-  let sickP=0.04+(S.clean<25?0.10:0)+(S.health<40?0.08:0);
-  if(chance(sickP)){
-    const pool=['cold','flu','lice'].filter(id=>!S.illnesses.some(i=>i.id===id));
-    if(pool.length) addIllness(pool[rnd(0,pool.length-1)]);
-  }
-
-  // случайное событие
-  if(chance(0.4)) randomEvent();
-
-  clampState();
-
-  // смерть
-  if(S.health<=0){
-    S.over=true;
-    showModal('☠️ Конец',
-      '<p>На '+S.day+'-й день организм сказал «хватит». Так заканчиваются истории тех, кто не нашёл помощи вовремя.</p>'+
-      '<p>Дней прожито: <b>'+S.day+'</b>. Накоплено: <b>'+fmt(S.money)+' ₽</b>. Лучшая работа: <b>'+(S.job?S.job.name:'—')+'</b>.</p>',
-      [{text:'Попробовать снова', primary:true, fn:()=>{localStorage.removeItem('bomzh_save'); location.reload();}}]);
-    render();
-    return;
-  }
-
-  if(S.money>=APARTMENT_PRICE){
-    addLog('На счету уже '+fmt(S.money)+' ₽ — можно покупать квартиру!','logBig');
-  }
-  render();
-}
-
-function randomEvent(){
-  const ev=rnd(0,10);
-  switch(ev){
-    case 0: case 1: // полиция
-      if(!S.doc){
-        const fine=rnd(300,800);
-        S.money=Math.max(0,S.money-fine); S.health=clamp(S.health-4); S.mood=clamp(S.mood-8);
-        addLog('Полиция: «Документики?» Паспорта нет — штраф '+fine+' ₽.','logBad');
-      } else {
-        addLog('Патруль проверил документы и пропустил. Приятно быть гражданином.','');
-      }
-      break;
-    case 2: { // находка
-      const m=rnd(200,1500); S.money+=m;
-      addLog('Нашёл кошелёк на остановке: +'+fmt(m)+' ₽. Совесть в замешательстве, кошелёк в кармане.','logGood'); break;
-    }
-    case 3: // кража
-      if(!S.card && S.money>100){
-        const lost=Math.round(S.money*0.3);
-        S.money-=lost;
-        addLog('Пока вы спали, кто-то «одолжил» '+fmt(lost)+' ₽. Карта с ПИН-кодом не помешала бы.','logBad');
-      } else {
-        addLog('Ночь прошла спокойно.','');
-      }
-      break;
-    case 4: // еда от прохожего
-      S.hunger=clamp(S.hunger-30); S.mood=clamp(S.mood+5);
-      addLog('Бабушка у храма угостила пирожком. Тёплым. Мир не без добрых людей.','logGood');
-      break;
-    case 5: // дождь
-      if(S.weather.id!=='rain') S.weather=WEATHERS[2];
-      S.clean=clamp(S.clean-15); S.mood=clamp(S.mood-5);
-      addLog('Начался дождь. Всё, что было сухим, — больше не сухое.','');
-      break;
-    case 6: // настроение
-      S.mood=clamp(S.mood+10);
-      addLog('Удалось душевно поговорить с дворником на набережной. +настроение.','logGood');
-      break;
-    case 7: // старый знакомый
-      if(S.job && chance(0.5)){
-        const bonus=Math.round(S.job.pay*0.5);
-        S.money+=bonus;
-        addLog('Бывший коллега подкинул подработки: +'+fmt(bonus)+' ₽.','logGood');
-      } else {
-        addLog('Кто-то из «коллег» по вокзалу поделился буханкой хлеба.','');
-        S.hunger=clamp(S.hunger-15);
-      }
-      break;
-    case 8: // мороз
-      if(S.weather.id!=='frost') S.weather=WEATHERS[3];
-      addLog('Резко похолодало. Если сегодня спать на улице — будет больно.','logBad');
-      break;
-    case 9: // аллергия / простуда от непогоды
-      if(S.weather.id==='rain'&&chance(0.3)) addIllness('cold');
-      else S.energy=clamp(S.energy+10);
-      break;
-    case 10:
-      addLog('Спокойный день без происшествий.','');
-      break;
-  }
-}
-
-/* ---------- сохранение ---------- */
-function save(){
-  localStorage.setItem('bomzh_save', JSON.stringify(S));
-  showModal('Сохранено','<p>Прогресс записан в память браузера.</p>',[{text:'Ок',primary:true,fn:render}]);
-}
-function load(){
-  const raw=localStorage.getItem('bomzh_save');
-  if(!raw) return false;
-  try{
-    S=JSON.parse(raw);
-    S.weather=WEATHERS.find(w=>w.id===S.weather.id)||WEATHERS[0];
-    if(S.job) S.job=JOBS.find(j=>j.id===S.job.id)||S.job;
-    startGame(false);
-    return true;
-  }catch(e){ return false; }
-}
-
-/* ---------- старт ---------- */
-function startGame(fresh){
-  if(fresh){
-    S=newState();
-    addLog('День первый. Вы проснулись на вокзале: голова тяжёлая, карманы почти пустые. Самое время что-то менять.','logBig');
-  }
-  document.getElementById('start').classList.add('hidden');
-  document.getElementById('game').classList.remove('hidden');
-  render();
-}
-
-document.getElementById('startBtn').onclick=()=>startGame(true);
-document.getElementById('loadBtn').onclick=()=>load();
-document.getElementById('saveBtn').onclick=save;
-document.getElementById('resetBtn').onclick=()=>showModal('Начать заново?','<p>Весь прогресс будет потерян.</p>',
-  [{text:'Да, заново',primary:true,fn:()=>{localStorage.removeItem('bomzh_save'); location.reload();}},
-   {text:'Отмена',fn:render}]);
-
-if(localStorage.getItem('bomzh_save')) document.getElementById('loadBtn').classList.remove('hidden');
-</script>
+<script src="script.js"></script>
 </body>
 </html>
